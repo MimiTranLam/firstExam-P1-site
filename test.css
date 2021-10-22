@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: sans-serif;
+  background-color: rgb(163, 163, 163);
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  margin: 0;
+  padding: 1vw;
+  background-color: black;
+}
+
+.navbar ol {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2vw;
+}
+
+.navbar ol li:hover {
+  font-size: 2vw;
+  color: hotpink;
+  font-weight: 800;
+}
+
+.navbar ol li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.navbar ol li a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+main {
+  margin: 5vw;
+  padding: 5vw;
+  background-color: whitesmoke;
+  box-shadow: 0px 10px 10px 10px #888888;
+}
+
+.QnA {
+  position: relative;
+  margin: 2vw;
+  padding-bottom: 1vw;
+  border: 4px solid turquoise;
+  background-color: rgb(163, 163, 163);
+}
+
+.QnA #title {
+  margin: 0;
+  padding-left: 20px;
+  width: inherit;
+  height: 100px;
+  font-size: 4rem;
+  color: turquoise;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.QnA .answers {
+  padding: 0 2vw;
+}
+
+/* .QnA h2 {
+  margin: 2vw 0 0;
+  padding: 0;
+} */
+
+.QnA p {
+  line-height: 1.5rem;
+}
+
+.name-form {
+  padding: 1vw;
+}
+
+.checklist {
+  padding: 1vw;
+}
+
+#youtube-vid {
+  padding: 1vw;
+}
+
+.spacing-positioning {
+  margin: 1vw;
+  border: 1px solid black;
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.grey-box {
+  margin: 10px;
+  background-color: grey;
+  height: 130px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}

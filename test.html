@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ol id="nav-links">
+            <li>
+                <a href="#CLI">CLI</a>
+            </li>
+            <li>
+                <a href="#Git">Git/Github</a>
+            </li>
+            <li>
+                <a href="#HTML">HTML</a>
+            </li>
+            <li>
+                <a href="#CSS">CSS</a>
+            </li>
+        </ol>
+    </nav>
+
+    <main>
+
+    <section id="CLI">
+        <div class="QnA">
+            <div id="title">CLI</div>
+
+            <div class="answers">
+            <h2>What is CLI?</h2>
+            <p>CLI stands for Command Line Interface. Users can interact with a system or application by typing in text commands.</p>
+
+            <h2>What is the adv/disadv of CLI?</h2>
+            <div>
+                <p>
+                    Advantages: <br />
+                    - Can carry out multiple actions in a single application? <br />
+                    - Do everything by just typing. "Type faster than you can click". <br />
+                    - If there is an error or a wrong text command is used, the cli will clearly state what the error is and suggest
+                    alternate solutions.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Disadvantages: <br />
+                </p>
+            </div>
+
+            <h2>Which do you prefer, CLI or GUI? Why?</h2>
+            <p>I like a mix of both.</p>
+
+            <h2>Which command to check your current directory?</h2>
+            <p>Either "pwd" to see the path file and name of the directory OR "ls" to list out all the contents of a directory.</p>
+
+            <h2>Which command to create a new folder/directory?</h2>
+            <p>Type "mkdir *dirname*" to make and name a folder/dir.</p>
+
+            <h2>Which command to create a new file?</h2>
+            <p>Type "touch _filename_" and format/language (eg. ".js") to make and name a specific file and type of file.</p>
+
+            <h2>You are in Desktop folder, which command to make a new directory name coderschool and navigate inside it?</h2>
+            <p><ol id="q7">
+                <li>Check you're in the correct folder/dir that you want to make the folder in by "pwd" or "ls".</li>
+                <li>Type "mkdir && cd _dirname_" to make and name a folder/dir and navigate inside it.</li>
+            </ol></p>
+
+            <h2>Which command to delete a file?</h2>
+            <p>Type "rm _filename_" to remove a file.</p>
+
+            <h2>Which command to delete a non-empty folder?</h2>
+            <p>Type "rm -rf _dirname_ to delete a non empty folder/dir.</p>
+
+            <h2>What does this command do?</h2>
+            <p>Creates a .md (markdown) file and writes a string of text into the .md file.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Git">
+        <div class="QnA">
+            <div id="title">Git/Github</div>
+        
+            <div class="answers">
+                <h2>What does the . mean in this command?</h2>
+                <p>Means "all". In this command it will add all files in the current working dir to the git repo.</p>
+        
+                <h2>What does the -m mean, is it OK without -m in this command?</h2>
+                <p>Means git commit message. In this command the user makes a commit to the git repo and names the commit.</p>
+        
+                <h2>What does the -M mean in this command?</h2>
+                <p>Makes a master branch.</p>
+        
+                <h2>What do origin and main mean in this command?</h2>
+                <p>Origin indicates which git repo the user is working in (defined by url). Main is the main branch of the git repo.</p>
+        
+                <h2>Which command to initialise a git repo in local?</h2>
+                <p>Make sure you're in the correct working dir. Type "git init" to initialise the dir as a local repo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="HTML">
+        <div class="QnA">
+            <div id="title">HTML</div>
+        
+            <div class="answers">
+                <h2>Inside head tag, what does first meta tag mean?</h2>
+                <p>Declares use of UTF-8 character encoding. Declaring this allows the browser to know to convert typed characters
+                (human-readable text) into machine-readable code and vice versa.</p>
+        
+                <h2>Inside head tag, what does second meta tag mean?</h2>
+                <p>"viewport" indicates the area of display screen on the client's side. The second part of the meta tag gives instructions
+                to the browser on how to control the webpage's dimensions and scaling. "width=device-width" sets the webpage content
+                (information to be displayed) width to the client's device width. "user-scalable=no" disables browser zoom-in on both
+                mobile and desktop devices. "initial-scale=1.0" sets the zoom level when the page is first loaded. "maximum-scale=1.0"
+                sets the limit on how much the user can zoom as the parameter, in this case it doesn't allow the user to zoom in.
+                "minimum-scale=1.0" also controls zoom.</p>
+        
+                <h2>Inside head tag, what is wrong with link tag?</h2>
+                <p>The link to the css stylesheet is incorrect. Instead of linking as source, it should be a "href" attribute to specify
+                it's destination in relation to the current resource (the HTML file/document). A "src" is used to embed a resource into
+                the webpage.</p>
+        
+                <h2>List some tags that do not have closing tag?</h2>
+                <p><ul>
+                    <li>link</li>
+                    <li>img</li>
+                    <li>input</li>
+                </ul>
+                These self-closing tags cannot have child elements.
+                </p>
+        
+                <h2>Give some contexts of using span tag?</h2>
+                <p>A "span" tag is a generic inline container. It does not start on new line and only takes up the necessary width (with
+                the flow).<br/>
+                For eg. Spotify exercise: the links in the navbar, contain a "|" in a span tag to separate the two sides of links while
+                keeping everything on the same line.</p>
+                    
+                <h2>Give 1 example of creating a hyperlink by a tag in html? (answer with HTML code)</h2>
+                <p>
+                    Use the "a" tag. Must include source by href linking and a closing tag.
+                    <code><a href="https://www.spotify.com/us/premium/">Premium</a></code>
+                </p>
+
+                <h2>Give 1 example of inserting a picture in html? (answer with HTML code)</h2>
+                <p>
+                    Use the self-closing "img" tag. Must include source of/path to image with "src" and alternate text if the image cannot be displayed with "alt" (to let a user know what is meant to be displayed).
+                    <code><img src="./images/balloon.png" alt="balloon"></code>
+                </p>
+                
+                <h2>Give 1 example of creating an email link in html? (answer with HTML code)</h2>
+                <p>
+                    Use the "a" tag. Must include source by href linking and a closing tag. The URI scheme "mailto: " allows users to click on the hyperlink and send an email to the specific address linked in the hyperlink tag.
+                    <code><a href="mailto: mimitranlam1212@gmail.com">Some text</a></code>
+                </p>
+
+                <h2>Create a form similar to the below picture? (answer with HTML code)</h2>
+                <div class="name-form">
+                    First name: <br />
+                    <input class="name-input" /> <br />
+                    Last name: <br />
+                    <input class="name-input" /> <br />
+                    <button id="submit-btn" style="margin-top: 20px;">Submit</button>
+                </div>
+
+                <h2>Create a form with checkboxes similar to the below picture? (answer with HTML code)</h2>
+                <div class="checklist">
+                    <input type="checkbox" /> I have a bike <br />
+                    <input type="checkbox" /> I have a car <br />
+                    <input type="checkbox" /> I have a boat
+                </div>
+
+                <h2>How to add a YouTube video to html? (answer with HTML code)</h2>
+                <p>Use the "iframe" tag to embed a youtube video into an HTML document.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="CSS">
+        <div class="QnA">
+            <div id="title">CSS</div>
+        
+            <div class="answers">
+                <h2>Explain box model elements.</h2>
+                <p>The box model is used in CSS for design and layout. The box model element represents the size of an element including (in order from inside to outside) its content, padding, border and margin.</p>
+        
+                <h2>The value in inch of 1 px?</h2>
+                <p>1 pixel = 1/96 inches.</p>
+        
+                <h2>What is vw/vh?</h2>
+                <p>Client's viewport width and height.</p>
+        
+                <h2>List all values of position property? Which one is default value?</h2>
+                <p>
+                    Default is static.
+                    <ul>
+                        <li>static</li>
+                        <li>relative</li>
+                        <li>fixed</li>
+                        <li>sticky</li>
+                        <li>absolute</li>
+                        <li>initial (sets position property to default value)</li>
+                        <li>inherit (inherits the position property of the parent element)</li>
+                    </ul>
+                </p>
+        
+                <h2>List all values of flex-direction property? Which one is default value?</h2>
+                <p>
+                    Default is row.
+                <ul>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                    <li>initial (sets flex-direction property to default value)</li>
+                    <li>inherit (inherits the flex-direction property of the parent element)</li>
+                </ul>
+                </p>
+
+                <h2>List all values of justify-content property? Which one is default value?</h2>
+                <p>
+                    Default is flex-start.
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>space-evenly</li>
+                    <li>initial (sets justify-content property to default value)</li>
+                    <li>inherit (inherits the justify-content property of the parent element)</li>
+                </ul>
+                </p>
+
+                <h2>List all values of align-items property? Which one is default value?</h2>
+                <p>
+                    Default is stretch.
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>stretch</li>
+                    <li>baseline</li>
+                    <li>initial (sets align-itemst property to default value)</li>
+                    <li>inherit (inherits the align-items property of the parent element)</li>
+                </ul>
+                </p>
+
+                <h2>List all values of align-content property? Which one is default value?</h2>
+                <p>
+                    Default is stretch.
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>stretch</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>space-evenly</li>
+                    <li>initial (sets align-content property to default value)</li>
+                    <li>inherit (inherits the align-content property of the parent element)</li>
+                </ul>
+                </p>
+
+                <h2>List all values of flex-wrap property? Which one is default value?</h2>
+                <p>
+                    Default is wrap.
+                <ul>
+                    <li>wrap</li>
+                    <li>no-wrap</li>
+                    <li>wrap-reverse</li>
+                    <li>initial (sets flex-wrap property to default value)</li>
+                    <li>inherit (inherits the flex-wrap property of the parent element)</li>
+                </ul>
+                </p>
+
+                <h2>The different between space-between and space-around in align-content property?</h2>
+                <p>
+                    Default is wrap.
+                <ul>
+                    <li>space-between = spaces each item **between each other** in the element with the available space. Start and end items will touch edges of the parent element.</li>
+                    <li>space-around = spaces each item **between each other and edges of the parent element** in the element with the available space. All items will have equal space between themselves, as much as possible without touching the edges of the parent element. This means that there will be a different distance of space between items and the parent element edge.</li>
+                    <li>space-evenly = spaces each item **between each other and edges of the parent element** in the element with the available space. All items will have equal space between themselves and the edges of the parent element.</li>
+                </ul>
+                </p>
+
+                <h2>Create a box similar to the picture below? (answer with HTML + CSS code)</h2>
+                <div class="spacing-positioning">
+                    <div id="one" class="grey-box">1</div>
+                    <div id="two" class="grey-box">2</div>
+                    <div id="three" class="grey-box">3</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+
+</body>
+</html>
