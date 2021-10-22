@@ -15,8 +15,11 @@ Advantage:
 - Can carry out multiple actions in a single application?
 - Do everything by just typing. "Type faster than you can click".
 - If there is an error or a wrong text command is used, the cli will clearly state what the error is and suggest alternate solutions.
-  Disadvantage:
--
+
+Disadvantage:
+
+- Command needs to be correctly typed out. If there are any typos, the command won't work.
+- On top of knowing coding rules of other languages, there are also alot of commands to learn. (eg. If you don't remember how to make a folder and cd into it, there is more typing to do than just in one single command).
 
 ### Which do you prefer, CLI or GUI? Why?
 
